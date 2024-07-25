@@ -1,0 +1,285 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Website - Diet Plan Section</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="static/assets/img/favicon.png" rel="icon">
+  <link href="static/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="static/assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="static/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="static/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="static/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Latest compiled JavaScript -->
+  
+  <!-- Template Main CSS File -->
+  <link href="static/assets/css/style.css" rel="stylesheet">
+
+
+    <style>
+        #d1 ,#d2,#d3{
+             background-color: rgb(86, 84, 84);
+        }
+        
+
+       
+
+        body ,#d {
+            background-image: url('static/assets/img/bg.jpg');
+            background-size: cover; /* Ensures the image covers the entire background */
+            background-position: center; /* Centers the image */
+            /* Additional styles */
+            font-family: Arial, sans-serif;
+            color: #fff;
+        }
+        /* Custom styles for the Diet Plan section */
+        .diet-plan {
+            padding: 50px 0;
+            background-color: #f8f9fa;
+        }
+
+        .plan-item {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .plan-item img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .plan-item h3 {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div>
+    <header id="header" class="fixed-top ">
+        <div class="container d-flex align-items-center justify-content-lg-between">
+    
+          <h1 class="logo me-auto me-lg-0"><a href="/">Fitness Center<span>.</span></a></h1>
+          
+          <a href="/" class="logo me-auto me-lg-0"><img src="static/assets/img/logo.jpg" alt="" class="img-fluid"></a>
+    
+          <nav id="navbar" class="navbar order-last order-lg-0">
+            <ul>
+              <li><a class="nav-link scrollto active" href="/">Home</a></li>
+              <li><a class="nav-link scrollto" href="#about">About</a></li>
+              <li><a class="nav-link scrollto" href="/services">Services</a></li>
+              <li><a class="nav-link scrollto " href="/gallery">gallery</a></li>
+              <li><a class="nav-link scrollto" href="/contact">Contact</a></li>
+              <li class="dropdown"><a href="#"><span>Membership</span> <i class="bi bi-chevron-down"></i></a>
+                <ul>
+                  <li><a href="/join">Join</a></li>
+                  <li class="dropdown"><a href="#"><span>Plans For You</span> <i class="bi bi-chevron-right"></i></a>
+                    <ul>
+                    
+                      <li><a href="/workout">Workout plans</a></li>
+                      <li><a href="/diet">Diet plans</a></li>
+                    </ul>
+                  <li><a href="/profile">View profile </a></li>
+                  <li><a href="#">Tracker</a></li>
+                </ul>
+              </li>
+              
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+          </nav><!-- .navbar -->
+    
+          {% if not request.user.is_authenticated %}
+    
+          <a href="/signup" class="get-started-btn scrollto">Sign In</a>
+         {% else %}
+    
+         <a href="/logout" class="get-started-btn scrollto">Log out</a>
+    
+    
+         {% endif %}
+        </div>
+      </header><!-- End Header -->
+       <br>
+       <br>
+       <br>  
+       <br> 
+</div>
+    <h1 style="text-align: center; color: white;" , ><u>Eat right, gain might: Your personalized path to a stronger, healthier you</u></h1>
+    <div class="container" >
+        <div class="row diet-plan" id="d">
+            <div class="col-md-4">
+                <div class="plan-item text-center" id="d1">
+                    <img src="static/assets/img/gain.jpg" alt="Diet Plan 1">
+                    <h1>Diet Plan 1</h1>
+                    <p><h2><u>Weight Gain Diet Plan</u></h2>
+
+                        <h3>Monday</h3>
+                        <ul>
+                          <li><strong>Breakfast:</strong> Scrambled eggs with cheese and spinach, Whole-grain toast with avocado</li>
+                          <li><strong>Mid-Morning Snack:</strong> Greek yogurt with granola and sliced bananas</li>
+                          <li><strong>Lunch:</strong> Grilled chicken or tofu wrap with vegetables and hummus, Mixed fruit salad</li>
+                          <li><strong>Afternoon Snack:</strong> Protein smoothie with whole milk, berries, and protein powder, Handful of cashews or almonds</li>
+                          <li><strong>Dinner:</strong> Baked salmon or lentil stew, Quinoa pilaf, Steamed broccoli with cheese sauce</li>
+                          <li><strong>Evening Snack:</strong> Cottage cheese with pineapple slices, Whole-grain crackers with cheese</li>
+                        </ul>
+                        
+                        <h3>Tuesday</h3>
+                        <ul>
+                          <li><strong>Breakfast:</strong> Overnight oats with whole milk, chia seeds, and mixed nuts, Banana or apple</li>
+                          <li><strong>Mid-Morning Snack:</strong> Protein bar or nut bar</li>
+                          <li><strong>Lunch:</strong> Beef or turkey burger with whole-grain bun, Sweet potato fries, Mixed greens salad with olive oil dressing</li>
+                          <li><strong>Afternoon Snack:</strong> Peanut butter sandwich on whole-grain bread, Carrot sticks with hummus</li>
+                          <li><strong>Dinner:</strong> Grilled chicken thighs or tempeh with brown rice, Stir-fried vegetables in sesame oil</li>
+                          <li><strong>Evening Snack:</strong> Protein shake with almond milk, banana, and a scoop of protein powder</li>
+                        </ul>
+                        
+                        <h3>Wednesday</h3>
+                        <ul>
+                          <li><strong>Breakfast:</strong> Whole-grain pancakes with maple syrup and mixed berries, Greek yogurt with honey</li>
+                          <li><strong>Mid-Morning Snack:</strong> Apple slices with almond butter</li>
+                          <li><strong>Lunch:</strong> Tuna or chickpea salad wrap, Quinoa salad with veggies</li>
+                          <li><strong>Afternoon Snack:</strong> Protein smoothie with whole milk, mango, and protein powder, Trail mix with dried fruits and nuts</li>
+                          <li><strong>Dinner:</strong> Beef stir-fry with noodles or rice, Steamed edamame or green beans</li>
+                          <li><strong>Evening Snack:</strong> Cottage cheese with peaches or berries</li>
+                        </ul>
+                        
+                        <h3>Thursday to Saturday</h3>
+                        <p>You can mix and match meals from the previous days to ensure variety and meet your calorie and nutrient needs. Focus on including a balance of protein, carbohydrates, healthy fats, and plenty of fruits and vegetables throughout these days. Adjust portion sizes based on your individual requirements and activity level.</p>
+                        
+                        </body>
+                        </html></p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="plan-item text-center" id="d2">
+                    <img src="static/assets/img/loss.jpg" alt="Diet Plan 2">
+                    <h1>Diet Plan 2</h1>
+                    <p><h2><u>Weight Loss Diet Plan</u></h2>
+
+                        <h3>Monday</h3>
+                        <ul>
+                          <li><strong>Breakfast:</strong> Scrambled egg whites with spinach and tomatoes, Whole-grain toast or oatmeal</li>
+                          <li><strong>Mid-Morning Snack:</strong> Greek yogurt with berries</li>
+                          <li><strong>Lunch:</strong> Grilled chicken salad with mixed greens, cucumbers, and a vinaigrette dressing</li>
+                          <li><strong>Afternoon Snack:</strong> Carrot sticks with hummus</li>
+                          <li><strong>Dinner:</strong> Baked fish with lemon and herbs, Steamed vegetables (broccoli, cauliflower, green beans)</li>
+                          <li><strong>Evening Snack:</strong> Air-popped popcorn or a small handful of almonds</li>
+                        </ul>
+                        
+                        <h3>Tuesday</h3>
+                        <ul>
+                          <li><strong>Breakfast:</strong> Smoothie with spinach, banana, almond milk, and protein powder</li>
+                          <li><strong>Mid-Morning Snack:</strong> Cottage cheese with sliced cucumbers or bell peppers</li>
+                          <li><strong>Lunch:</strong> Turkey or tofu wrap with whole-grain tortilla and lettuce, tomato, and mustard</li>
+                          <li><strong>Afternoon Snack:</strong> Edamame (steamed soybeans)</li>
+                          <li><strong>Dinner:</strong> Grilled shrimp skewers with zucchini and bell peppers, Quinoa or brown rice</li>
+                          <li><strong>Evening Snack:</strong> Low-fat string cheese or a small apple</li>
+                        </ul>
+                        <h3>Wednesday</h3>
+                       <ul>
+                         <li><strong>Breakfast:</strong> Chia seed pudding with almond milk and berries, Whole-grain toast with avocado</li>
+                          <li><strong>Mid-Morning Snack:</strong> Rice cakes with almond butter</li>
+                              <li><strong>Lunch:</strong> Grilled vegetable salad with quinoa and a balsamic vinaigrette</li>
+                           <li><strong>Afternoon Snack:</strong> Greek yogurt with honey and walnuts</li>
+                         <li><strong>Dinner:</strong> Baked tofu with stir-fried vegetables (bell peppers, broccoli, mushrooms) in a light soy sauce</li>
+                           <li><strong>Evening Snack:</strong> Sliced cucumbers with guacamole</li>
+                             </ul>
+
+
+                             <h3>Thursday to Saturday</h3>
+                        <p>You can mix and match meals from the previous days to ensure variety and meet your calorie and nutrient needs. Focus on including a balance of protein, carbohydrates, healthy fats, and plenty of fruits and vegetables throughout these days. Adjust portion sizes based on your individual requirements and activity level.</p>
+                        
+
+                        
+                        </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="plan-item text-center" id="d3">
+                    <img src="static/assets/img/Muscle.jpg" alt="Diet Plan 3">
+                    <h1>Diet Plan 3</h1>
+                    <p><h2><u>Muscle-Building Diet Plan</u></h2>
+
+                        <h3>Monday</h3>
+                        <ul>
+                          <li><strong>Breakfast:</strong> Scrambled eggs with whole-grain toast, Greek yogurt with berries, Banana</li>
+                          <li><strong>Mid-Morning Snack:</strong> Protein shake with almond milk, banana, and protein powder</li>
+                          <li><strong>Lunch:</strong> Grilled chicken breast, Quinoa or brown rice, Steamed broccoli and carrots</li>
+                          <li><strong>Afternoon Snack:</strong> Cottage cheese with pineapple chunks, Handful of almonds</li>
+                          <li><strong>Dinner:</strong> Baked salmon or lean beef, Sweet potatoes, Mixed greens salad with avocado</li>
+                        </ul>
+                        
+                        <h3>Tuesday</h3>
+                        <ul>
+                          <li><strong>Breakfast:</strong> Oatmeal with protein powder, nuts, and berries, Whole-grain toast with almond butter</li>
+                          <li><strong>Mid-Morning Snack:</strong> Greek yogurt with granola and honey</li>
+                          <li><strong>Lunch:</strong> Turkey or tofu wrap with whole-grain tortilla, lettuce, and tomatoes, Mixed fruit salad</li>
+                          <li><strong>Afternoon Snack:</strong> Protein bar or energy bar, Apple slices with peanut butter</li>
+                          <li><strong>Dinner:</strong> Grilled shrimp or tempeh, Quinoa or whole-grain pasta, Steamed asparagus or green beans</li>
+                        </ul>
+                        
+                        <h3>Wednesday</h3>
+                        <ul>
+                          <li><strong>Breakfast:</strong> Scrambled eggs with spinach and feta cheese, Whole-grain toast with avocado</li>
+                          <li><strong>Mid-Morning Snack:</strong> Protein shake with almond milk, banana, and protein powder</li>
+                          <li><strong>Lunch:</strong> Grilled chicken thighs, Brown rice or sweet potatoes, Steamed broccoli and cauliflower</li>
+                          <li><strong>Afternoon Snack:</strong> Cottage cheese with mixed berries, Handful of walnuts or cashews</li>
+                          <li><strong>Dinner:</strong> Baked cod or lean pork, Quinoa salad with vegetables, Mixed greens salad with olive oil dressing</li>
+                        </ul>
+                        
+                        <h3>Friday</h3>
+                        <ul>
+                          <li><strong>Breakfast:</strong> Protein pancakes with Greek yogurt and berries, Whole-grain toast with almond butter</li>
+                          <li><strong>Mid-Morning Snack:</strong> Protein smoothie with spinach, almond milk, banana, and protein powder</li>
+                          <li><strong>Lunch:</strong> Grilled steak or tofu, Quinoa or whole-grain pasta salad, Steamed green beans or Brussels sprouts</li>
+                          <li><strong>Afternoon Snack:</strong> Greek yogurt with granola and honey, Carrot sticks with hummus</li>
+                          <li><strong>Dinner:</strong> Baked chicken drumsticks, Sweet potatoes or brown rice, Mixed greens salad with avocado and nuts</li>
+                        </ul>
+                        <h3>Saturday to sunday</h3>
+                        <li><p>Cheat day :- A cheat day is a designated day in a diet plan where you allow yourself to indulge in foods that are typically restricted or limited, providing a break from the usual dietary restrictions and allowing for enjoyment of favorite treats.
+
+
+
+
+
+
+                        </p></li>
+                        </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="static/assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="static/assets/vendor/aos/aos.js"></script>
+    <script src="static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="static/assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="static/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="static/assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="static/assets/vendor/php-email-form/validate.js"></script>
+  
+    <!-- Template Main JS File -->
+    <script src="static/assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
